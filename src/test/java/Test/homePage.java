@@ -2,6 +2,7 @@ package Test;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import pageObjects.Landingpage;
@@ -17,7 +18,7 @@ public class Homepage extends Base {
 	public void contactt() throws IOException, InterruptedException {
 		
 		driver =initialize();
-		driver.get("https://www.sprucetech.com/");
+		driver.get(pro.getProperty("url"));
 		
 		l=new Landingpage(driver);
 		
@@ -46,7 +47,11 @@ public class Homepage extends Base {
 	
 	
 	
-	
+	@AfterTest
+	public void teardown() {
+		driver.manage().deleteAllCookies();
+		driver.close();
+	}
 	
 	
 

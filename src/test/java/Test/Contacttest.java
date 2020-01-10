@@ -8,6 +8,8 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -19,13 +21,13 @@ public class Contacttest extends Base {
 	
 	Contact c;
 	
-	@Test
+	@BeforeTest
 	public void brow() throws IOException, InterruptedException {
 		
 		driver=initialize();
 		
 		
-		driver.get("https://www.sprucetech.com");
+		driver.get(pro.getProperty("url"));
 		
 		
 	}
@@ -117,7 +119,13 @@ public class Contacttest extends Base {
 	
 	
 	
-	
+	@AfterTest
+	public void teardown() {
+		
+		driver.manage().deleteAllCookies();
+		driver.quit();
+		
+	}
 	
 
 }

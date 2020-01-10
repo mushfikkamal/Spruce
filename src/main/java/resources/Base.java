@@ -17,14 +17,15 @@ public class Base {
 	public WebDriver initialize() throws IOException {
 		
 	 pro=new Properties();
-	FileInputStream fis=new FileInputStream("C:\\I-Phone\\Sprouce\\src\\main\\java\\resources\\data.properties");
+	 //	FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
+	FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+ "\\src\\main\\java\\resources\\data.properties");
 	pro.load(fis);	
 	
 	String browsername=pro.getProperty("browser");
 	
 	if (browsername.contains("chrome")) {
 		
-System.setProperty("webdriver.chrome.driver", "C:\\Users\\kamal\\Downloads\\seleneum\\downloads\\chromedriver79\\chromedriver_win32\\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver", "src\\main\\java\\resources\\chromedriver79\\chromedriver_win32\\chromedriver.exe");
 		
 		 driver =new ChromeDriver();
 	}
