@@ -65,14 +65,15 @@ public class Contacttest extends Base {
 		}
 	
 	
-	@Test(dataProvider="getdata")
-	public void info(String firstname, String lastname, String email, String comment){
+	@Test(dataProvider="getData")
+	
+	public void info(String Username,String Password,String email,String comment){
 		
 		driver.get("https://www.sprucetech.com");
 		
 		c.getTittle().click();
-		c.getFirst().sendKeys(firstname);
-		c.getLast().sendKeys(lastname);
+		c.getFirst().sendKeys(Username);
+		c.getLast().sendKeys(Password);
 		c.getEmail().sendKeys(email);
 		c.getComment().sendKeys(comment);
 		c.getSubmit().click();
@@ -93,7 +94,7 @@ public class Contacttest extends Base {
 	
 	
 	@DataProvider
-	public Object[][] getData(){
+	public Object[][] getData() throws InterruptedException{
 		Object [][] data=new Object [2][4];
 		
 		data [0][0]="firstname";
@@ -101,7 +102,7 @@ public class Contacttest extends Base {
 		data [0][2]="email";
 		data [0][3]="hi";
 		
-		
+		Thread.sleep(5000);
 		data [1][0]="name";
 		data [1][1]="last";
 		data [1][2]="email@";
