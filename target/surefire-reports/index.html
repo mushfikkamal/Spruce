@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Test.data" hash-for-method="info(firstname, lastname)">info(firstname, lastname)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,11 +117,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Test.data" hash-for-method="info(name, last)">info(name, last)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Test.Contacttest" hash-for-method="info(firstname, lastname, email, hi)">info(firstname, lastname, email, hi)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -156,44 +137,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Test.data</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="info(firstname, lastname)">
-                  </a> <!-- info(firstname, lastname) -->
-                  <span class="method-name">info</span>
-                  <span class="parameters">(firstname, lastname)</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at pageObjects.Contact.getTittle(Contact.java:78)
-	at Test.data.info(data.java:28)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test.data</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="info(name, last)">
-                  </a> <!-- info(name, last) -->
-                  <span class="method-name">info</span>
-                  <span class="parameters">(name, last)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -260,7 +203,6 @@
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Test.Homepage&quot;/&gt;
-      &lt;class name=&quot;Test.data&quot;/&gt;
       &lt;class name=&quot;Test.AppTest&quot;/&gt;
       &lt;class name=&quot;Test.Contacttest&quot;/&gt;
     &lt;/classes&gt;
@@ -276,7 +218,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -302,35 +244,27 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'contactt')
 data.setCell(0, 2, 'Test.Homepage')
-data.setCell(0, 3, 14209);
+data.setCell(0, 3, 33031);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'fbsocial')
 data.setCell(1, 2, 'Test.Contacttest')
-data.setCell(1, 3, 14066);
+data.setCell(1, 3, 18417);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'info')
-data.setCell(2, 2, 'Test.data')
-data.setCell(2, 3, 11962);
+data.setCell(2, 2, 'Test.Contacttest')
+data.setCell(2, 3, 6005);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'info')
-data.setCell(3, 2, 'Test.data')
-data.setCell(3, 3, 8998);
+data.setCell(3, 2, 'Test.Contacttest')
+data.setCell(3, 3, 4344);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'info')
+data.setCell(4, 1, 'cons')
 data.setCell(4, 2, 'Test.Contacttest')
-data.setCell(4, 3, 5271);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'cons')
-data.setCell(5, 2, 'Test.Contacttest')
-data.setCell(5, 3, 3404);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'info')
-data.setCell(6, 2, 'Test.Contacttest')
-data.setCell(6, 3, 3364);
+data.setCell(4, 3, 2328);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -371,46 +305,37 @@ return data;
               <div class="chronological-class-name">Test.Homepage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">contactt</span>
-                <span class="method-start">9920 ms</span>
+                <span class="method-start">22106 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.Contacttest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">cons</span>
-                <span class="method-start">24136 ms</span>
+                <span class="method-start">55144 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fbsocial</span>
-                <span class="method-start">27540 ms</span>
+                <span class="method-start">57473 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">info(firstname, lastname, email, hi)</span>
-                <span class="method-start">46611 ms</span>
+                <span class="method-start">80908 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">info(name, last, email@, hello)</span>
-                <span class="method-start">51884 ms</span>
+                <span class="method-start">86916 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.data</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">info(firstname, lastname)</span>
-                <span class="method-start">55254 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">info(name, last)</span>
-                <span class="method-start">64283 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.Contacttest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">76246 ms</span>
+                <span class="method-start">91264 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.Homepage</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">93414 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

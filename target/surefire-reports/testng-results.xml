@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="77725" started-at="2020-01-09T21:11:35 EST" finished-at="2020-01-09T21:12:53 EST">
+  <suite name="Suite" duration-ms="93920" started-at="2020-01-12T14:34:21 EST" finished-at="2020-01-12T14:35:55 EST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="77725" started-at="2020-01-09T21:11:35 EST" finished-at="2020-01-09T21:12:53 EST">
+    <test name="Test" duration-ms="93920" started-at="2020-01-12T14:34:21 EST" finished-at="2020-01-12T14:35:55 EST">
       <class name="Test.Contacttest">
-        <test-method status="PASS" signature="brow()[pri:0, instance:Test.Contacttest@2aa3cd93]" name="brow" is-config="true" duration-ms="9876" started-at="2020-01-09T21:11:35 EST" finished-at="2020-01-09T21:11:45 EST">
+        <test-method status="PASS" signature="brow()[pri:0, instance:Test.Contacttest@add0edd]" name="brow" is-config="true" duration-ms="22054" started-at="2020-01-12T14:34:21 EST" finished-at="2020-01-12T14:34:43 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brow -->
-        <test-method status="PASS" signature="cons()[pri:0, instance:Test.Contacttest@2aa3cd93]" name="cons" duration-ms="3404" started-at="2020-01-09T21:11:59 EST" finished-at="2020-01-09T21:12:03 EST">
+        <test-method status="PASS" signature="cons()[pri:0, instance:Test.Contacttest@add0edd]" name="cons" duration-ms="2328" started-at="2020-01-12T14:35:16 EST" finished-at="2020-01-12T14:35:18 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cons -->
-        <test-method status="PASS" signature="fbsocial()[pri:0, instance:Test.Contacttest@2aa3cd93]" name="fbsocial" duration-ms="14066" started-at="2020-01-09T21:12:03 EST" finished-at="2020-01-09T21:12:17 EST">
+        <test-method status="PASS" signature="fbsocial()[pri:0, instance:Test.Contacttest@add0edd]" name="fbsocial" duration-ms="18417" started-at="2020-01-12T14:35:18 EST" finished-at="2020-01-12T14:35:37 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fbsocial -->
-        <test-method status="PASS" signature="info(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test.Contacttest@2aa3cd93]" name="info" duration-ms="5271" started-at="2020-01-09T21:12:22 EST" data-provider="getData" finished-at="2020-01-09T21:12:27 EST">
+        <test-method status="PASS" signature="info(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test.Contacttest@add0edd]" name="info" duration-ms="6005" started-at="2020-01-12T14:35:42 EST" data-provider="getData" finished-at="2020-01-12T14:35:48 EST">
           <params>
             <param index="0">
               <value>
@@ -45,7 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- info -->
-        <test-method status="PASS" signature="info(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test.Contacttest@2aa3cd93]" name="info" duration-ms="3364" started-at="2020-01-09T21:12:27 EST" data-provider="getData" finished-at="2020-01-09T21:12:30 EST">
+        <test-method status="PASS" signature="info(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test.Contacttest@add0edd]" name="info" duration-ms="4344" started-at="2020-01-12T14:35:48 EST" data-provider="getData" finished-at="2020-01-12T14:35:52 EST">
           <params>
             <param index="0">
               <value>
@@ -71,90 +71,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- info -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:Test.Contacttest@2aa3cd93]" name="teardown" is-config="true" duration-ms="1479" started-at="2020-01-09T21:12:51 EST" finished-at="2020-01-09T21:12:53 EST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Test.Contacttest@add0edd]" name="teardown" is-config="true" duration-ms="2150" started-at="2020-01-12T14:35:52 EST" finished-at="2020-01-12T14:35:54 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Test.Contacttest -->
-      <class name="Test.data">
-        <test-method status="FAIL" signature="info(java.lang.String, java.lang.String)[pri:0, instance:Test.data@4b44655e]" name="info" duration-ms="8998" started-at="2020-01-09T21:12:30 EST" data-provider="getData" finished-at="2020-01-09T21:12:39 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firstname]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[lastname]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at pageObjects.Contact.getTittle(Contact.java:78)
-at Test.data.info(data.java:28)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- info -->
-        <test-method status="PASS" signature="info(java.lang.String, java.lang.String)[pri:0, instance:Test.data@4b44655e]" name="info" duration-ms="11962" started-at="2020-01-09T21:12:39 EST" data-provider="getData" finished-at="2020-01-09T21:12:51 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[name]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[last]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- info -->
-      </class> <!-- Test.data -->
       <class name="Test.Homepage">
-        <test-method status="PASS" signature="contactt()[pri:0, instance:Test.Homepage@7ea37dbf]" name="contactt" duration-ms="14209" started-at="2020-01-09T21:11:45 EST" finished-at="2020-01-09T21:11:59 EST">
+        <test-method status="PASS" signature="contactt()[pri:0, instance:Test.Homepage@2aa3cd93]" name="contactt" duration-ms="33031" started-at="2020-01-12T14:34:43 EST" finished-at="2020-01-12T14:35:16 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactt -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Test.Homepage@2aa3cd93]" name="teardown" is-config="true" duration-ms="495" started-at="2020-01-12T14:35:54 EST" finished-at="2020-01-12T14:35:55 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- Test.Homepage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
